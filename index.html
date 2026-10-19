@@ -68,6 +68,7 @@
 
         <a href="#interets">Centres d'intérêt</a>
 
+        <a href="#veille" id="nav-veille" hidden>Veille</a>
         <a href="#contact">Contact</a>
 
       </nav>
@@ -393,6 +394,14 @@
       </div>
     </section>
 
+    <section id="veille" class="section section-veille" hidden>
+      <div class="container">
+        <div class="section-header centered"><span class="eyebrow">Veille</span><h2>Articles mis en avant</h2><p>Sélection issue de ma veille tech &amp; cybersécurité</p></div>
+        <div class="veille-grid" id="veille-grid"></div>
+        <div class="veille-footer"><a class="btn btn-ghost" href="https://youthseiko.github.io/veille-news/" target="_blank" rel="noopener"><i class="fa-solid fa-rss"></i> Toute la veille</a></div>
+      </div>
+    </section>
+
     <section id="documents" class="section section-muted">
       <div class="container">
         <div class="section-header centered"><span class="eyebrow">Documents</span><h2>Documents officiels</h2><p>CV et attestations</p></div>
@@ -526,6 +535,8 @@
     links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');toggle.classList.remove('open');}));
 
   </script>
+
+  <script src="assets/veille.js" defer></script>
 
 </body>
 
